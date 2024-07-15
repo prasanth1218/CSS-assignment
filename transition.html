@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-timing-function: ease;
+  transition-delay: 1s;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 1px;
+    background-color: palevioletred;
+    color: white;
+}
+p{
+    color:red;
+}
+
+
+div:hover {
+  width: 300px;
+}
+</style>
+</head>
+<body>
+
+<h1> transition Properties </h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+
+<div></div>
+
+<p><b>Note:</b> The transition effect has a 1 second delay before starting.</p>
+
+</body>
+</html>
+
+

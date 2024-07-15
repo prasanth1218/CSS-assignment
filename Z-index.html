@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLACING</title>
+    <style>
+        .container {
+          position: relative;
+        }
+        
+        .lightgreen-box {
+          position: relative;
+          z-index: 1;
+          border: 2px solid black;
+          height: 100px;
+          margin: 30px;
+          background-color: aqua;
+          padding: 20px;
+        }
+        
+        .red-box {
+          position: absolute;
+          z-index: 2; /* gray box will be above both green and black box */
+          background:red;
+          height: 60px;  
+          width: 70%;
+          left: 50px;
+          top: 50px;
+        }
+        
+        .purple-box {
+          position: absolute;
+          z-index: -1; /* green box will be above black box */
+          background: purple;
+          width: 35%;
+          left: 270px;
+          top: -15px;
+          height: 100px;
+          color:aliceblue;
+        }
+        h1{
+            text-align: center;
+            background-color: blueviolet;
+            color: aliceblue;
+            padding: 2px;
+            margin: 0%;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <h1>Z-index Example</h1>
+        <div class="container">
+          <div class="lightgreen-box">lightgreen box</div>
+          <div class="red-box">red box</div>
+          <div class="purple-box">purple box</div>
+        </div>
+        
+        </body>
+        </html>
+        
+        
+        
+
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Basics</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0%;
+            margin: 0%;
+            background-color: bisque;
+        }
+        header{
+            background-color: darkmagenta;
+            color: white;
+            text-align: center;
+            font-size: large;
+            padding: 20px;
+            margin: 1px;
+        }
+         .group{
+           display: flex;
+           justify-content: space-around;
+           flex-wrap: wrap;
+           padding: 20px;
+        }
+        .sub-group  {
+             background-color:skyblue;
+             border: 1px solid gray;
+             padding: 20px;
+             margin: 10px;
+             width: 300px;
+             border-radius: 5%;
+             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sub-group h2{
+            color: red;
+            text-align: center;
+        }
+        .sub-group ul{
+            color: white;
+        }
+        footer{
+            text-align: center;
+            background-color: darkmagenta;
+            color: white;
+            padding: 10px;
+            margin: 1px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>SPORTS</header>
+    <main>
+        <section class="group">
+            <div class="sub-group">
+                <h2>Football</h2>
+                <ul>
+                     <li>Attacking</li>
+                     <li>Blocking</li>
+                     <li>Reflexes</li>
+                    <li>Concentration</li>
+                    
+                </ul>
+            </div>
+            <div class="sub-group">
+                <h2>volleyball</h2>
+                <ul>
+                    <li>Forearm passing</li>
+                     <li>Volleying</li>
+                    <li>Setting</li>
+                    <li>Digging</li>
+                  </ul>
+            </div>
+            <div class="sub-group">
+                <h2>cricket</h2>
+                <ul>
+                    <li>Hand-Eye Coordination</li>
+                     <li>Concentration</li>
+                    <li>Reflexes</li>
+                    <li>Spatial Perception</li>
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 sports club. all rights reserved</p>
+    </footer>
+</body>
+</html>
